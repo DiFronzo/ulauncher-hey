@@ -1,0 +1,34 @@
+{
+    "required_api_version": "2",
+    "name": "Hey",
+    "description": "A ulauncher extension allowing you to query chatGPT-4, LLama, and claude",
+    "developer_name": "Andreas Lien",
+    "icon": "images/hey.png",
+    "options": {
+      "query_debounce": 0.1
+    },
+    "preferences": [
+      {
+        "id": "hey_kw",
+        "type": "keyword",
+        "name": "hey",
+        "description": "Keyword to trigger the hey extension",
+        "default_value": "hey"
+      },
+      {
+        "id": "hey_default_model",
+        "type": "text",
+        "name": "Default Model",
+        "description": "Default model to use when communicating with hey",
+        "default_value": "gpt-4o-mini"
+      },
+      {
+        "id": "hey_system_prompt",
+        "type": "text",
+        "name": "System Prompt",
+        "description": "Provide a system prompt to overwrite what is in your particular modelfile",
+        "default_value": "You are an inline assitant, keep your responses short and sweet."
+      }
+    ]
+  }
+  
